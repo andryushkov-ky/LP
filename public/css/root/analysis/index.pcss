@@ -1,0 +1,129 @@
+.analysis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bgGray50);
+}
+
+.analysis__item {
+    display: flex;
+    background-color: var(--bgGray50);
+    align-content: center;
+
+    &:nth-child(1) {
+        justify-content: flex-end;
+
+        .analysis__item-inner {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.analysis__item-inner {
+    display: flex;
+    flex-basis: 720px;
+    justify-content: center;
+}
+
+.analysis__icon-wrap {
+    margin-right: 30px;
+}
+
+.analysis__item-icon {
+    &--1 {
+        @mixin icon "svg/analysis-1.svg";
+    }
+
+    &--2 {
+        @mixin icon "svg/analysis-2.svg";
+    }
+}
+
+.analysis__item-info {
+    display: flex;
+    flex-basis: 480px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.analysis__item-title {
+    margin-bottom: 20px;
+    color: var(--Main3);
+    font-family: Helvetica-Bold, Arial, sans-serif;
+}
+
+.analysis__item-text {
+    font-size: var(--font19);
+    line-height: 25px;
+    min-height: 145px;
+    max-width: 350px;
+    font-family: Museo-Sans-Medium, Arial, sans-serif;
+    color: var(--textBlack);
+}
+
+
+@media only screen and (min-width: 1247px) {
+    .analysis__item-info {
+        flex-basis: 555px;
+        &--1 {
+            margin-right: 28px;
+        }
+    }
+
+    .analysis__icon-wrap {
+        margin-right: 70px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .analysis__item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .analysis__item-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .analysis__icon-wrap {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .analysis__item {
+        width: 50%;
+        height: 320px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        &:nth-child(1) {
+            border-right: 1px solid rgba(0, 0, 0, .1);
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .analysis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analysis__item {
+        border: none;
+        margin: 50px 20px;
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    .analysis__item-text {
+        font-size: var(--font17);
+    }
+}

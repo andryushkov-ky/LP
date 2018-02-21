@@ -1,0 +1,136 @@
+.project {
+    background-color: #FAFAFA;
+}
+
+.project__inner {
+    margin: 0 auto;
+    padding: 110px 0 50px 0;
+    max-width: 1198px;
+}
+
+.project__title {
+    font-size: var(--font30);
+    font-family: Museo-Sans-Bold, Arial, sans-serif;
+    color: var(--textMainBlack);
+    text-align: center;
+}
+
+.project__groups {
+    margin-top: 5px;
+}
+
+.project__group {
+    padding-top: 62px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+    &:nth-child(2) {
+        padding-bottom: 69px;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.project__group-title {
+    max-width: 531px;
+    font-size: var(--font30);
+    color: var(--textMainBlack);
+    font-family: Museo-Sans-Light, Arial, sans-serif;
+}
+
+.project__group-list {
+    margin-top: 28px;
+    max-width: 531px;
+    font-size: var(--font19);
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--textBlack);
+}
+
+.project__group-item {
+    position: relative;
+    line-height: 27px;
+    margin-bottom: 27px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 9px;
+        left: -38px;
+        width: 10px;
+        height: 10px;
+        background-color: var(--Main3);
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .project__title {
+        padding-left: 141px;
+        text-align: left;
+    }
+
+    .project__group {
+        padding-left: 182px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .project__group-list {
+        margin: 28px auto 0;
+    }
+
+    .project__group-title {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .project__title {
+        font-size: var(--font23)
+    }
+
+    .project__group-list {
+        padding-left: 50px;
+        padding-right: 25px;
+    }
+
+    .project__group-title {
+        padding-left: 50px;
+        padding-right: 25px;
+        font-size: var(--font23)
+    }
+
+    .project__group-item {
+        font-size: var(--font17)
+    }
+
+    .project__group {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .project__inner {
+        padding-top: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .project__group-item {
+        &:before {
+            left: -23px;
+        }
+    }
+
+    .project__group-list,
+    .project__group-title {
+        padding-left: 35px;
+    }
+}

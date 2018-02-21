@@ -1,0 +1,221 @@
+.ability {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bgGray50);
+}
+
+.ability__item {
+    display: flex;
+    height: 224px;
+    background-color: var(--bgGray50);
+    align-content: center;
+
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    &:nth-child(1),
+    &:nth-child(3) {
+        border-right: 1px solid rgba(0, 0, 0, .1);
+        justify-content: flex-end;
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+        justify-content: flex-start;
+    }
+    &:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        justify-content: center;
+    }
+}
+
+.ability__item-inner {
+    display: flex;
+    flex-basis: 720px;
+    justify-content: center;
+
+    &--width {
+        width: 100%;
+    }
+}
+
+.ability__item-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ability__icon-wrap {
+    display: flex;
+    margin-right: 30px;
+    width: 62px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ability__item-icon {
+    &--1 {
+        @mixin icon "svg/ab-1.svg";
+    }
+    &--2 {
+        @mixin icon "svg/ab-2.svg";
+    }
+    &--3 {
+        @mixin icon "svg/ab-3.svg";
+    }
+    &--4 {
+        @mixin icon "svg/ab-4.svg";
+    }
+    &--5 {
+        @mixin icon "svg/ab-5.svg";
+    }
+}
+
+.ability__item-text {
+    max-width: 350px;
+    font-size: var(--font19);
+    line-height: 25px;
+    font-family: Museo-Sans-Medium, Arial, sans-serif;
+    color: var(--textBlack);
+}
+
+@media only screen and (min-width: 1247px) {
+    .ability__item-info {
+        flex-basis: 540px;
+
+        &--1,
+        &--3 {
+            margin-right: 28px;
+        }
+    }
+
+    .ability__item {
+        &:nth-child(1),
+        &:nth-child(3) {
+            .ability__item-inner {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .ability__icon-wrap {
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .ability__item-info {
+        &--5 {
+            margin-left: 75px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1247px){
+    .ability__item {
+        &:nth-child(1),
+        &:nth-child(3) {
+            .ability__item-inner {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .ability__item-info {
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .ability__item {
+
+    }
+
+    .ability__item-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ability__icon-wrap {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .ability__item-text {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ability__item {
+        width: 50%;
+
+        &:last-child {
+            width: 100%;
+        }
+    }
+
+    .ability__item-info {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ability {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ability__item {
+        height: 150px;
+        border: none;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            border: none;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .ability__item-info {
+        flex-direction: row;
+        flex-basis: 600px;
+    }
+
+    .ability__item-text {
+        text-align: left;
+        font-size: var(--font17);
+        width: 300px;
+    }
+
+    .ability__icon-wrap {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .ability__item-info {
+        flex-direction: column;
+    }
+
+    .ability__icon-wrap {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ability__item {
+        margin-bottom: 30px;
+    }
+
+    .ability__item-text {
+        text-align: center;
+        width: 290px;
+    }
+}

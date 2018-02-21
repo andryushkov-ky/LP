@@ -1,0 +1,29 @@
+.join-btn {
+    display: flex;
+    width: 213px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    background-color: var(--Main3);
+    text-transform: uppercase;
+    color: var(--textWhite);
+    font-size: var(--font17);
+    font-weight: bold;
+    border-radius: 65px;
+    cursor: pointer;
+
+    &--width {
+        width: 326px;
+    }
+
+    &--shadow {
+        box-shadow: 0 0 13px rgba(0,0,0,.25);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .join-btn--width {
+        width: 300px;
+    }
+}
