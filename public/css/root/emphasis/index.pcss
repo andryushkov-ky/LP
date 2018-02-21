@@ -83,25 +83,11 @@
         padding: 0 20px;
         box-sizing: content-box;
     }
-
-    .emphasis__messages-text {
-        font-size: var(--font27);
-    }
 }
 
-@media only screen and (max-width: 767px) {
-    .emphasis__title {
-        font-size: var(--font23);
-    }
-
-    .emphasis__join {
-        margin-top: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .emphasis__social {
-        margin: 20px;
+@media only screen and (min-width: 766px) and (max-width: 1023px) {
+    .emphasis__messages-text {
+        font-size: var(--font27);
     }
 }
 
@@ -117,6 +103,21 @@
         margin-bottom: 30px;
     }
 
+    .emphasis__title {
+        font-size: var(--font23);
+    }
+
+    .emphasis__join {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .emphasis__social {
+        margin: 20px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px){
     .emphasis__messages-text {
         text-align: left;
         font-size: var(--font23);

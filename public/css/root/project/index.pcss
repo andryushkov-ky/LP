@@ -62,7 +62,6 @@
         position: absolute;
         display: block;
         top: 9px;
-        left: -38px;
         width: 10px;
         height: 10px;
         background-color: var(--Main3);
@@ -122,6 +121,14 @@
 
 }
 
+@media only screen and (min-width: 426px){
+    .project__group-item {
+        &:before {
+            left: -38px;
+        }
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .project__group-item {
         &:before {
@@ -131,6 +138,6 @@
 
     .project__group-list,
     .project__group-title {
-        padding-left: 35px;
+        padding-left: 35px !important;
     }
 }

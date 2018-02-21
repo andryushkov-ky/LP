@@ -6,6 +6,10 @@ const
 const
     NODE_ENV = process.env.NODE_ENV || 'dev';
 
+const fontLocal = 'file-loader?name=[name].[ext]';
+
+const fontConfig = NODE_ENV === 'dev' ? fontLocal : fontLocal;
+
 const config = {
     entry: {
         index: ['babel-polyfill', './public/js/index.js']
@@ -31,7 +35,7 @@ const config = {
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 use: {
-                    loader: 'file-loader'
+                    loader: fontConfig
                 }
             },
             {

@@ -12,6 +12,7 @@ module.exports = (ctx) => ({
             ]
         },
         'cssnano': ctx.env === 'prod' ? {} : false,
-        'css-mqpacker': ctx.env === 'prod' ? {} : false
+        'css-mqpacker': ctx.env === 'prod' ? {} : false,
+        'postcss-font-magician': {}
     }
 })
