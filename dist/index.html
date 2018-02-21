@@ -3,355 +3,414 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1">
-  <title>ICOAnatomy</title>
-<link href="./dist/index.css" rel="stylesheet"></head>
+  <title>ICO Anatomy</title>
+  <meta name="description" content="ICO Anatomy">
+
+  <base href="/">
+
+  <link rel="icon" href="images/manifest/favicon.ico">
+
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#455a64">
+
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="ICO Anatomy">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ICO Anatomy">
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/manifest/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/manifest/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/manifest/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/manifest/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/manifest/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/manifest/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/manifest/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/manifest/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/manifest/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/manifest/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/manifest/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#455a64">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="keywords" content="ICO Anatomy, investors"/>
+  <meta name="description" content="ICO Anatomy offers deep knowledge and professional analysis to help you find and attract investors"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="https://icoanatomy.com">
+  <meta name="twitter:creator" content="@icoanatomy">
+  <meta name="twitter:title" content="ICOAnatomy">
+  <meta name="twitter:description" content="ICO Anatomy offers deep knowledge and professional analysis to help you find and attract investors">
+  <meta name="twitter:image:src" content="https:/icoanatomy.com/images/share.png">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="ICOAnatomy"/>
+  <meta property="og:description" content="ICO Anatomy offers deep knowledge and professional analysis to help you find and attract investors"/>
+  <meta property="og:url" content="https:/icoanatomy.com"/>
+  <meta property="og:site_name" content="ICOAnatomy"/>
+  <meta property="og:image" content="https:/icoanatomy.com/images/share.png"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="./dist/index.min.css" rel="stylesheet">
+</head>
 <body>
-  <div id="root">
-    <div class="offer">
-      <div class="offer__inner wrapper">
-        <div class="offer__header">
-          <div class="offer__m-btn">
-            <div class="m-btn">
-              <span class="m-btn__hamburger m-btn__hamburger--1"></span>
-              <span class="m-btn__hamburger m-btn__hamburger--2"></span>
-              <span class="m-btn__hamburger m-btn__hamburger--3"></span>
-            </div>
-          </div>
-          <div class="offer__logo-wrap">
-            <a href="#" class="offer__logo"></a>
-          </div>
-          <div class="offer__nav">
-            <a href="https://icoanatomy.com/rating/ongoing" class="offer__nav-item">Ongoing</a>
-            <a href="https://icoanatomy.com/rating/upcoming" class="offer__nav-item">Upcoming</a>
-            <a href="https://icoanatomy.com/rating/past" class="offer__nav-item">Past</a>
-            <a href="https://icoanatomy.com/news" class="offer__nav-item">News</a>
-            <a href="https://icoanatomy.com/guides" class="offer__nav-item">Guides</a>
+<div id="root">
+  <div class="offer">
+    <div class="offer__inner wrapper">
+      <div class="offer__header">
+        <div class="offer__m-btn">
+          <div class="m-btn">
+            <span class="m-btn__hamburger m-btn__hamburger--1"></span>
+            <span class="m-btn__hamburger m-btn__hamburger--2"></span>
+            <span class="m-btn__hamburger m-btn__hamburger--3"></span>
           </div>
         </div>
-        <div class="offer__body nucleus">
-          <h2 class="offer__title">
-            Your trusted partner in successfully promoting
-            initial coin offering projects
-          </h2>
-          <p class="offer__desc">
-            ICO Anatomy offers deep knowledge and professional
-            analysis to help you find and attract investors and
-            expose your ICO to vast, targeted audiences across a full
-            array of Internet communities.
-          </p>
-          <div class="offer__join">
-            <a href="https://icoanatomy.com/login-page" class="join-btn join-btn--shadow" target="_self">Join us</a>
-          </div>
-          <div class="offer__vector" hidden></div>
+        <div class="offer__logo-wrap">
+          <a href="#" class="offer__logo"></a>
+        </div>
+        <div class="offer__nav">
+          <a href="/rating/ongoing" class="offer__nav-item">Ongoing</a>
+          <a href="/rating/upcoming" class="offer__nav-item">Upcoming</a>
+          <a href="/rating/past" class="offer__nav-item">Past</a>
+          <a href="/news" class="offer__nav-item">News</a>
+          <a href="/guides" class="offer__nav-item">Guides</a>
         </div>
       </div>
-    </div>
-    <div class="emphasis">
-      <div class="emphasis__inner nucleus">
-        <h2 class="emphasis__title">What ICO Anatomy Does For Clients</h2>
-      </div>
-    </div>
-    <div class="ability">
-      <div class="ability__item">
-        <div class="ability__item-inner">
-          <div class="ability__item-info ability__item-info--1">
-            <div class="ability__icon-wrap">
-              <div class="ability__item-icon ability__item-icon--1"></div>
-            </div>
-
-            <div class="ability__item-text">
-              Research, identify and locate key
-              audiences crucial to ICO success
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ability__item">
-        <div class="ability__item-inner">
-          <div class="ability__item-info ability__item-info--2">
-            <div class="ability__icon-wrap">
-              <div class="ability__item-icon ability__item-icon--2"></div>
-            </div>
-
-            <div class="ability__item-text">
-              Define, distinguish and articulate your ICO’s
-              unique value to investors
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ability__item">
-        <div class="ability__item-inner">
-          <div class="ability__item-info ability__item-info--3">
-            <div class="ability__icon-wrap">
-              <div class="ability__item-icon ability__item-icon--3"></div>
-            </div>
-            <div class="ability__item-text">
-              Develop strategic and tactical advice and
-              specific action options
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ability__item">
-        <div class="ability__item-inner">
-          <div class="ability__item-info">
-            <div class="ability__icon-wrap">
-              <div class="ability__item-icon ability__item-icon--4"></div>
-            </div>
-            <div class="ability__item-text">
-              Create compelling messages
-              and images to maximize response
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ability__item">
-        <div class="ability__item-inner">
-          <div class="ability__item-info ability__item-info--5">
-            <div class="ability__icon-wrap">
-              <div class="ability__item-icon ability__item-icon--5"></div>
-            </div>
-            <div class="ability__item-text">
-              Drive projects with focused<br>
-              advertising and moving video
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="emphasis">
-      <div class="emphasis__inner nucleus">
-        <h2 class="emphasis__title">
-          ICO Anatomy’s ICO rating is attracting a rapidly growing
-          cohort of more than 100,000 unique subscribers.
+      <div class="offer__body nucleus">
+        <h2 class="offer__title">
+          Your trusted partner in successfully promoting
+          initial coin offering projects
         </h2>
-        <div class="emphasis__join">
-          <a href="https://icoanatomy.com/login-page" class="join-btn" target="_self">Join us</a>
-          <div class="emphasis__social">
-            <div class="social">
-              <a href="" class="social-link social-link--fb"></a>
-              <a href="" class="social-link social-link--tg"></a>
-              <a href="" class="social-link social-link--tw"></a>
-              <a href="" class="social-link social-link--ln"></a>
-            </div>
-          </div>
+        <p class="offer__desc">
+          ICO Anatomy offers deep knowledge and professional
+          analysis to help you find and attract investors and
+          expose your ICO to vast, targeted audiences across a full
+          array of Internet communities.
+        </p>
+        <div class="offer__join">
+          <a href="/login-page" class="join-btn join-btn--shadow" target="_self">Join us</a>
         </div>
+        <div class="offer__vector" hidden></div>
       </div>
     </div>
-    <div class="rating">
-      <div class="rating__text nucleus">
-        Powerful, current, trusted: The ICO
-        Anatomy Rating distinguishes your project above
-        others in a fiercely competitive,
-        increasingly crowded ICO market
-      </div>
-    </div>
-    <div class="services">
-      <div class="services__inner nucleus">
-        <h2 class="services__title">Customer-Intimate Services</h2>
-        <div class="services__description">
-          Think of ICO Anatomy as an integrated partner.
-          Unlike mere external service providers who offer “off the shelf,”
-          “one-size-fits-all” solutions, ICO Anatomy provides
-        </div>
-        <div class="services__list">
-          <div class="services__item services__item--1">
-            <div class="services__item-icon"></div>
-            <div class="services__item-text">Deep research and expert analysis</div>
-          </div>
-          <div class="services__item services__item--2">
-            <div class="services__item-icon"></div>
-            <div class="services__item-text">Strategic,<br> results-based,<br> customer-intimate<br> solutions</div>
-          </div>
-          <div class="services__item services__item--3">
-            <div class="services__item-icon"></div>
-            <div class="services__item-text">Compelling<br> messaging and<br> communications<br> tools</div>
-          </div>
-          <div class="services__item services__item--4">
-            <div class="services__item-icon"></div>
-            <div class="services__item-text">Measurable results</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="project">
-      <div class="project__inner">
-        <h2 class="project__title">
-          Up-To-Date Project Information
-        </h2>
-        <div class="project__groups">
-          <div class="project__group">
-            <div class="project__group-title">Premium Page</div>
-            <div class="project__group-list">
-              <div class="project__group-item">
-                Introduce all the attributes and advantages of your project to key target audiences.
-              </div>
-              <div class="project__group-item">
-                Unlimited space for promotional tools including videos, roadmaps and vital information
-                about ICO project team members.
-              </div>
-              <div class="project__group-item">
-                Integrated with social networks—essential connections
-                in a market moving at light-speed.
-              </div>
-            </div>
-          </div>
-          <div class="project__group">
-            <div class="project__group-title">Automated Updates: Currency is King</div>
-            <div class="project__group-list">
-              <div class="project__group-item">
-                What have you done for me today? ICO Anatomy continuously
-                updates and upgrades key information and audiences to assure optimal growth.
-              </div>
-            </div>
-          </div>
-          <div class="project__group">
-            <div class="project__group-title">Information On the Go: News You Can Use</div>
-            <div class="project__group-list">
-              <div class="project__group-item">
-                Succinct, professionally written and targeted
-                news releases keep key investment media and potential
-                investors informed about your project’s unique attributes.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="emphasis emphasis--bot-line">
-      <div class="emphasis__inner nucleus">
-        <h2 class="emphasis__title">Powerful Advertising</h2>
-        <div class="emphasis__messages">
-          <div class="emphasis__messages-inner">
-            <div class="emphasis__messages-img"></div>
-          </div>
-          <div class="emphasis__messages-text">
-            Compelling, well-crafted and ads on our
-            site will rocket your key messages to thousands
-            upon thousands of specifically targeted viewers
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="emphasis">
-      <div class="emphasis__inner nucleus">
-        <h2 class="emphasis__title">Trusted Advisors</h2>
-        <div class="emphasis__description">
-          Clear Analysis, Sound Advice for ICO Projects
-        </div>
-      </div>
-    </div>
-    <div class="analysis">
-      <div class="analysis__item">
-        <div class="analysis__item-inner">
-          <div class="analysis__item-info analysis__item-info--1">
-            <div class="analysis__icon-wrap">
-              <div class="analysis__item-icon--1"></div>
-            </div>
-            <div class="analysis__item-text">
-              <div class="analysis__item-title">
-                ICO Review
-              </div>
-              A brief yet comprehensive review
-              helps attract potential investors with
-              essential details and key attributes of
-              your ICO campaign
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="analysis__item">
-        <div class="analysis__item-inner">
-          <div class="analysis__item-info analysis__item-info--2">
-            <div class="analysis__icon-wrap">
-              <div class="analysis__item-icon--2"></div>
-            </div>
-            <div class="analysis__item-text">
-              <div class="analysis__item-title">
-                ICO Audit
-              </div>
-              ICO Anatomy’s audit produces insights,
-              analysis and actionable recommendations
-              for maximizing project potential and investor
-              return
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="emphasis">
-      <div class="emphasis__inner emphasis__inner--upper  nucleus">
-        <div class="emphasis__join">
-          <a href="https://icoanatomy.com/login-page" class="join-btn join-btn--width" target="_self">Rocket your ICO to success</a>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-nav">
-      <div class="bottom-nav__inner wrapper">
-        <div class="bottom-nav__logo-wrap">
-          <a href="#" class="bottom-nav__logo"></a>
-        </div>
-        <div class="bottom-nav__right">
-          <div class="bottom-nav__list">
-            <div class="bottom-nav__list-half">
-              <a href="https://icoanatomy.com/rating/ongoing" class="bottom-nav__item">Ongoing</a>
-              <a href="https://icoanatomy.com/rating/upcoming" class="bottom-nav__item">Upcoming</a>
-              <a href="https://icoanatomy.com/rating/past" class="bottom-nav__item">Past</a>
-            </div>
-            <div class="bottom-nav__list-half">
-              <a href="https://icoanatomy.com/news" class="bottom-nav__item">News</a>
-              <a href="https://icoanatomy.com/guides" class="bottom-nav__item">Guides</a>
-              <div class="bottom-nav__item bottom-nav__item--empty"></div>
-            </div>
-          </div>
-          <div class="bottom-nav__social">
-            <div class="social social--min">
-              <a href="" class="social-link social-link--fb"></a>
-              <a href="" class="social-link social-link--tg"></a>
-              <a href="" class="social-link social-link--tw"></a>
-              <a href="" class="social-link social-link--ln"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer__inner wrapper">
-        <div class="footer__policy">
-          Terms of services and Privacy policy<br> &copy; ICOANATOMY 2018
-        </div>
-        <div class="footer__about">
-          <div class="footer__about-title">
-            About Us
-          </div>
-          <div class="footer__about-desc">
-            ICO Anatomy offers deep knowledge and professional
-            analysis to help you find and attract investors
-          </div>
-        </div>
-        <div class="footer__policy footer__policy--empty">
-        </div>
-      </div>
-    </div>
-    <div class="l-menu">
-      <div class="l-menu__m-close">
-        <div class="m-close">
-          <span class="m-close__hamburger m-close__hamburger--1"></span>
-          <span class="m-close__hamburger m-close__hamburger--2"></span>
-        </div>
-      </div>
-      <div class="l-menu__inner">
-        <div class="l-menu__list">
-          <a href="https://icoanatomy.com/rating/ongoing" class="l-menu__nav-item">Ongoing</a>
-          <a href="https://icoanatomy.com/rating/upcoming" class="l-menu__nav-item">Upcoming</a>
-          <a href="https://icoanatomy.com/rating/past" class="l-menu__nav-item">Past</a>
-          <a href="https://icoanatomy.com/news" class="l-menu__nav-item">News</a>
-          <a href="https://icoanatomy.com/guides" class="l-menu__nav-item">Guides</a>
-        </div>
-      </div>
-    </div>
-    <div class="shadow"></div>
   </div>
-<script type="text/javascript" src="./dist/index.js"></script></body>
+  <div class="emphasis">
+    <div class="emphasis__inner nucleus">
+      <h2 class="emphasis__title">What ICO Anatomy Does For Clients</h2>
+    </div>
+  </div>
+  <div class="ability">
+    <div class="ability__item">
+      <div class="ability__item-inner">
+        <div class="ability__item-info ability__item-info--1">
+          <div class="ability__icon-wrap">
+            <div class="ability__item-icon ability__item-icon--1"></div>
+          </div>
+
+          <div class="ability__item-text">
+            Research, identify and locate key
+            audiences crucial to ICO success
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ability__item">
+      <div class="ability__item-inner">
+        <div class="ability__item-info ability__item-info--2">
+          <div class="ability__icon-wrap">
+            <div class="ability__item-icon ability__item-icon--2"></div>
+          </div>
+
+          <div class="ability__item-text">
+            Define, distinguish and articulate your ICO’s
+            unique value to investors
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ability__item">
+      <div class="ability__item-inner">
+        <div class="ability__item-info ability__item-info--3">
+          <div class="ability__icon-wrap">
+            <div class="ability__item-icon ability__item-icon--3"></div>
+          </div>
+          <div class="ability__item-text">
+            Develop strategic and tactical advice and
+            specific action options
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ability__item">
+      <div class="ability__item-inner">
+        <div class="ability__item-info">
+          <div class="ability__icon-wrap">
+            <div class="ability__item-icon ability__item-icon--4"></div>
+          </div>
+          <div class="ability__item-text">
+            Create compelling messages
+            and images to maximize response
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ability__item">
+      <div class="ability__item-inner">
+        <div class="ability__item-info ability__item-info--5">
+          <div class="ability__icon-wrap">
+            <div class="ability__item-icon ability__item-icon--5"></div>
+          </div>
+          <div class="ability__item-text">
+            Drive projects with focused<br>
+            advertising and moving video
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="emphasis">
+    <div class="emphasis__inner nucleus">
+      <h2 class="emphasis__title">
+        ICO Anatomy’s ICO rating is attracting a rapidly growing
+        cohort of more than 100,000 unique subscribers.
+      </h2>
+      <div class="emphasis__join">
+        <a href="/login-page" class="join-btn" target="_self">Join us</a>
+        <div class="emphasis__social">
+          <div class="social">
+            <a href="https://www.facebook.com/ICOAnatomy-957837074381494/" class="social-link social-link--fb"></a>
+            <a href="https://t.me/icoanatomy" class="social-link social-link--tg"></a>
+            <a href="https://twitter.com/icoanatomy" class="social-link social-link--tw"></a>
+            <a href="https://www.linkedin.com/company/icoanatomy/" class="social-link social-link--ln"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rating">
+    <div class="rating__text nucleus">
+      Powerful, current, trusted: The ICO
+      Anatomy Rating distinguishes your project above
+      others in a fiercely competitive,
+      increasingly crowded ICO market
+    </div>
+  </div>
+  <div class="services">
+    <div class="services__inner nucleus">
+      <h2 class="services__title">Customer-Intimate Services</h2>
+      <div class="services__description">
+        Think of ICO Anatomy as an integrated partner.
+        Unlike mere external service providers who offer “off the shelf,”
+        “one-size-fits-all” solutions, ICO Anatomy provides
+      </div>
+      <div class="services__list">
+        <div class="services__item services__item--1">
+          <div class="services__item-icon"></div>
+          <div class="services__item-text">Deep research and expert analysis</div>
+        </div>
+        <div class="services__item services__item--2">
+          <div class="services__item-icon"></div>
+          <div class="services__item-text">Strategic,<br> results-based,<br> customer-intimate<br> solutions</div>
+        </div>
+        <div class="services__item services__item--3">
+          <div class="services__item-icon"></div>
+          <div class="services__item-text">Compelling<br> messaging and<br> communications<br> tools</div>
+        </div>
+        <div class="services__item services__item--4">
+          <div class="services__item-icon"></div>
+          <div class="services__item-text">Measurable results</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project">
+    <div class="project__inner">
+      <h2 class="project__title">
+        Up-To-Date Project Information
+      </h2>
+      <div class="project__groups">
+        <div class="project__group">
+          <div class="project__group-title">Premium Page</div>
+          <div class="project__group-list">
+            <div class="project__group-item">
+              Introduce all the attributes and advantages of your project to key target audiences.
+            </div>
+            <div class="project__group-item">
+              Unlimited space for promotional tools including videos, roadmaps and vital information
+              about ICO project team members.
+            </div>
+            <div class="project__group-item">
+              Integrated with social networks—essential connections
+              in a market moving at light-speed.
+            </div>
+          </div>
+        </div>
+        <div class="project__group">
+          <div class="project__group-title">Automated Updates: Currency is King</div>
+          <div class="project__group-list">
+            <div class="project__group-item">
+              What have you done for me today? ICO Anatomy continuously
+              updates and upgrades key information and audiences to assure optimal growth.
+            </div>
+          </div>
+        </div>
+        <div class="project__group">
+          <div class="project__group-title">Information On the Go: News You Can Use</div>
+          <div class="project__group-list">
+            <div class="project__group-item">
+              Succinct, professionally written and targeted
+              news releases keep key investment media and potential
+              investors informed about your project’s unique attributes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="emphasis emphasis--bot-line">
+    <div class="emphasis__inner nucleus">
+      <h2 class="emphasis__title">Powerful Advertising</h2>
+      <div class="emphasis__messages">
+        <div class="emphasis__messages-inner">
+          <div class="emphasis__messages-img"></div>
+        </div>
+        <div class="emphasis__messages-text">
+          Compelling, well-crafted and ads on our
+          site will rocket your key messages to thousands
+          upon thousands of specifically targeted viewers
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="emphasis">
+    <div class="emphasis__inner nucleus">
+      <h2 class="emphasis__title">Trusted Advisors</h2>
+      <div class="emphasis__description">
+        Clear Analysis, Sound Advice for ICO Projects
+      </div>
+    </div>
+  </div>
+  <div class="analysis">
+    <div class="analysis__item">
+      <div class="analysis__item-inner">
+        <div class="analysis__item-info analysis__item-info--1">
+          <div class="analysis__icon-wrap">
+            <div class="analysis__item-icon--1"></div>
+          </div>
+          <div class="analysis__item-text">
+            <div class="analysis__item-title">
+              ICO Review
+            </div>
+            A brief yet comprehensive review
+            helps attract potential investors with
+            essential details and key attributes of
+            your ICO campaign
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="analysis__item">
+      <div class="analysis__item-inner">
+        <div class="analysis__item-info analysis__item-info--2">
+          <div class="analysis__icon-wrap">
+            <div class="analysis__item-icon--2"></div>
+          </div>
+          <div class="analysis__item-text">
+            <div class="analysis__item-title">
+              ICO Audit
+            </div>
+            ICO Anatomy’s audit produces insights,
+            analysis and actionable recommendations
+            for maximizing project potential and investor
+            return
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="emphasis">
+    <div class="emphasis__inner emphasis__inner--upper  nucleus">
+      <div class="emphasis__join">
+        <a href="/login-page" class="join-btn join-btn--width" target="_self">Rocket your ICO to success</a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-nav">
+    <div class="bottom-nav__inner wrapper">
+      <div class="bottom-nav__logo-wrap">
+        <a href="#" class="bottom-nav__logo"></a>
+      </div>
+      <div class="bottom-nav__right">
+        <div class="bottom-nav__list">
+          <div class="bottom-nav__list-half">
+            <a href="/rating/ongoing" class="bottom-nav__item">Ongoing</a>
+            <a href="/rating/upcoming" class="bottom-nav__item">Upcoming</a>
+            <a href="/rating/past" class="bottom-nav__item">Past</a>
+          </div>
+          <div class="bottom-nav__list-half">
+            <a href="/news" class="bottom-nav__item">News</a>
+            <a href="/guides" class="bottom-nav__item">Guides</a>
+            <div class="bottom-nav__item bottom-nav__item--empty"></div>
+          </div>
+        </div>
+        <div class="bottom-nav__social">
+          <div class="social social--min">
+            <a href="https://www.facebook.com/ICOAnatomy-957837074381494/" class="social-link social-link--fb"></a>
+            <a href="https://t.me/icoanatomy" class="social-link social-link--tg"></a>
+            <a href="https://twitter.com/icoanatomy" class="social-link social-link--tw"></a>
+            <a href="https://www.linkedin.com/company/icoanatomy/" class="social-link social-link--ln"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__inner wrapper">
+      <div class="footer__policy">
+        Terms of services and Privacy policy<br> &copy; ICOANATOMY 2018
+      </div>
+      <div class="footer__about">
+        <div class="footer__about-title">
+          About Us
+        </div>
+        <div class="footer__about-desc">
+          ICO Anatomy offers deep knowledge and professional
+          analysis to help you find and attract investors
+        </div>
+      </div>
+      <div class="footer__policy footer__policy--empty">
+      </div>
+    </div>
+  </div>
+  <div class="l-menu">
+    <div class="l-menu__m-close">
+      <div class="m-close">
+        <span class="m-close__hamburger m-close__hamburger--1"></span>
+        <span class="m-close__hamburger m-close__hamburger--2"></span>
+      </div>
+    </div>
+    <div class="l-menu__inner">
+      <div class="l-menu__list">
+        <a href="/rating/ongoing" class="l-menu__nav-item">Ongoing</a>
+        <a href="/rating/upcoming" class="l-menu__nav-item">Upcoming</a>
+        <a href="/rating/past" class="l-menu__nav-item">Past</a>
+        <a href="/news" class="l-menu__nav-item">News</a>
+        <a href="/guides" class="l-menu__nav-item">Guides</a>
+      </div>
+    </div>
+  </div>
+  <div class="shadow"></div>
+</div>
+<script type="text/javascript" src="./dist/index.min.js"></script>
+</body>
 </html>
