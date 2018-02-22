@@ -2,6 +2,7 @@ const
     webpack = require('webpack'),
     commonPaths = require("./common-paths");
 
+const CompressionPlugin = require("compression-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
@@ -51,9 +52,14 @@ const config = {
                 drop_console: true,
                 unsafe: true
             }
-        })
+        }),
 
-        //todo-second think about to use compression-webpack-plugin !!! it will make our js/css/html more tiny
+        // new CompressionPlugin({
+        //     asset: '[path].gz[query]',
+        //     algorithm: 'gzip',
+        //     test: /\.js$|\.json$|\.css$|\.html$/,
+        //     deleteOriginalAssets: true
+        // })
     ]
 };
 

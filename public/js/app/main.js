@@ -14,30 +14,22 @@ export default class Main extends Global {
         const mBtn = document.querySelector('.m-btn');
         const mClose = document.querySelector('.l-menu__m-close');
 
-
-        // TODO use toggle
         shadow.addEventListener("click", () => {
-          this.hideMenu();
+          this.toggleMenu();
         });
 
         mClose.addEventListener("click", () => {
-            this.hideMenu();
+            this.toggleMenu();
         });
 
         mBtn.addEventListener("click", () => {
-            this.openMenu();
+            this.toggleMenu();
         });
     }
 
-    hideMenu() {
-        const menu = document.querySelector('.l-menu--open');
-
-        menu.classList.remove("l-menu--open");
-    }
-
-    openMenu() {
+    toggleMenu() {
         const menu = document.querySelector('.l-menu');
 
-        menu.classList.add("l-menu--open");
+        menu.classList.toggle("l-menu--open");
     }
 }

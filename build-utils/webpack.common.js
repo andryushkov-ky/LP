@@ -12,11 +12,13 @@ const fontConfig = NODE_ENV === 'dev' ? fontLocal : fontLocal;
 
 const config = {
     entry: {
-        index: ['babel-polyfill', './public/js/index.js']
+        // index: ['babel-polyfill', './public/js/index.js']
+        index: './public/js/index.js'
     },
     output: {
         path: commonPaths.outputPath,
-        publicPath: NODE_ENV === 'dev' ? '/' : './dist/',
+        publicPath: NODE_ENV === 'dev' ? '/' : '/',
+        // publicPath: NODE_ENV === 'dev' ? '/' : './dist/',
         filename: '[name].js'
     },
     module: {
